@@ -1,0 +1,104 @@
+<!-- ***************** CSS **************** -->
+<style>  
+table{
+  border: 3px solid #1A89BA;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Helvetica;
+}
+table thead th{
+    padding: 5px 16px;
+    width: 50%;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 14px;
+}
+table p {
+  margin: 0;
+}
+.left{
+  vertical-align: bottom;
+  text-align: left;
+  background-color: #F7F7F7;
+}
+.right{
+  text-align: right;
+  background-color: #EFEFEF;
+}
+table tbody td{
+  text-transform: uppercase;
+}
+table tbody tr:not(:last-child) td{
+  border-bottom: 1px solid #EEEEEE;
+  padding: 8px 16px;
+  margin-left: 5px
+}
+table tbody tr td:first-child{
+  color: #1A89BA;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+table tbody td p:last-child{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.text-right{
+  text-align: right;
+}
+.loadBtn{
+  text-align: center;
+  color: #1A89BA;
+  text-transform: inherit !important;
+  padding: 16px;
+}
+.red{
+  color: #BD5A70;
+}
+.green{
+  color:#3EAA60
+}
+.gray{
+  color: #747474;
+}
+.blue{
+  color: #1A89BA;
+}
+</style>
+
+<!-- ******************** HTML ************************** -->
+<table>
+  <thead>
+    <tr>
+      <th class="left">Account</th>
+      <th class="right">
+        <p><span class="blue">^</span> Available Cash</p>
+        <p class="gray">Today's Change</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ira- 5200</td>
+      <td class="text-right">
+        <p><b>$5,763.36</b></p>
+        <p class="red">-0.08% / $8,916.69</p>
+      </td>
+    </tr>
+        <tr>
+      <td>aaa- 1812</td>
+      <td class="text-right">
+        <p><b>$2,010,926.10</b></p>
+        <p class="green">+0.21% / $38,881.63</p>      </td>
+    </tr>
+        <tr>
+      <td>ira- 3810</td>
+      <td class="text-right">
+        <p><b>$10,050,054.07</b></p>
+        <p class="green">+0.07% / $8,916.69</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="loadBtn">Load more</td>
+    </tr>
+  </tbody>
+</table>
